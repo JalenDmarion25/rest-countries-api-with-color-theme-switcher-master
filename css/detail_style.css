@@ -1,0 +1,156 @@
+:root{
+    --header-color: hsl(0, 0%, 100%);
+    --body-color: hsl(0, 0%, 98%);
+    --text-color: hsl(200, 15%, 8%);
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4); 
+    background-color: var(--header-color);
+    padding: 5px 35px 5px 35px;
+}
+
+.return_btn{
+    position: absolute;
+    width: fit-content;
+    margin: -80px 0 0 0
+}
+
+.count_container{
+    display: flex;
+    padding: 100px;
+    margin-top: 100px;
+    justify-content: space-evenly;
+}
+
+.count_container h2{
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+.count_container img{
+    width: 600px;
+    height: 300px;
+    
+}
+
+.image_view{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+.info p{
+    font-weight: 800;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+.info span{
+    font-weight: 400;
+    color: var(--text-color);
+
+}
+
+.info_left{
+    margin-right: 100px;
+    
+}
+
+.info_left .cap{
+    margin-bottom: 40px;
+    
+}
+
+.count_container a{
+    font-size: 0.8rem;
+    padding: 5px 25px 5px 25px;
+
+    
+}
+
+.border_countries{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 10px;
+  }
+
+.mobile_border{
+    display: none;
+}
+
+  @media screen and (max-width:1310px) {
+
+    .count_container h2{
+        font-size: 1.8rem;
+        color: var(--text-color);
+        margin-top: 30px;
+    }
+
+    .count_container img{
+        width: 300px;
+        height: 200px;
+        
+    }
+
+    .count_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px;
+        margin-top: 100px;
+        justify-content: baseline;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: baseline;
+        margin-top: 20px;
+        
+    }
+
+    .info_left {
+        margin-right: 0px;
+    }
+
+
+    .info_right .lang{
+        margin-bottom: 40px;
+        
+    }
+
+    .mobile_border{
+        display: block;
+    }
+
+    .desk_mobile{
+        display: none;
+    }
+
+    .info p{
+        font-weight: 600;
+        color: var(--text-color);
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+    
+    .info span{
+        font-weight: 200;
+        color: var(--text-color);
+        font-size: 0.8rem;
+
+    
+    }
+}

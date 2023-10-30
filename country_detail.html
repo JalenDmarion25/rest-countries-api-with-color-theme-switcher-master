@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/detail_style.css">
+    <title>Second Page</title>
+</head>
+<body>
+    <header>
+        <h2>Where in the world?</h2>
+        <div>  
+            <input type="checkbox" id="switch" class="switch"/>
+            <label id="label" for="switch" class ="label">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="ball"></div>
+            </label>
+        </div>
+    </header>
+
+
+
+    <div class="count_container">
+    <div class="image_view">
+        <a class="return_btn"  href="index.html"><i class="fa-solid fa-arrow-left"></i> Back</a>
+        <img id="flag" alt="Country Flag">
+    </div>
+    <div id="country-info">
+        <div>
+        <h2><span id="name"></span></h2>
+        <div class="info">
+        <div class="info_left">
+            <p>Native Name: <span id="nativename"></span></p>
+            <p>Population: <span id="population"></span></p>
+            <p>Region: <span id="region"></span></p>
+            <p>Sub Region: <span id="subregion"></span></p>
+            <p class="cap">Capital: <span id="capital"></span></p>
+            <p class="desk_border">Border Countries:</p>
+        </div>
+
+        <div class="info_right">
+            <p>Top Level Domain: <span id="topLevel"></span></p>
+            <p>Currencies: <span id="currencies"></span></p>
+            <p class="lang">Languages: <span id="languages"></span></p>
+        </div>
+
+        <p class="mobile_border">Border Countries:</p>
+
+    </div>
+        <div class="border_countries" id="borders"></div>
+    </div>
+    </div>
+    </div>
+
+    <script src="js/theme_script.js"></script>
+   <script src="js/detail_script.js"></script>
+</body>
+</html>
